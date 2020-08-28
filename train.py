@@ -321,7 +321,7 @@ if __name__ == '__main__':
 
     transform = transforms.Compose(
         [
-            transforms.Grayscale()
+            transforms.Grayscale(),
             transforms.RandomHorizontalFlip(),
             transforms.ToTensor(),
             transforms.Normalize(0.5, 0.5, inplace=True),
